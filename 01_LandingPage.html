@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Intern Crowd</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            display: flex;
+            background:linear-gradient(90deg, rgba(0, 188, 212, 1) 50%, rgba(238, 130, 238, 1) 100%);
+        }
+        .left{
+            margin: 15px;
+            margin-right: auto;
+            font-size: 1.5rem;
+        }
+        .navbar{
+            margin-right: auto;
+             margin-top:18px;
+            
+        }
+        .right{
+           
+            margin:18px;
+            margin-right: 15px;
+            border: 1px solid black;
+            background-color: white;
+        }
+        nav ul{
+            display: flex;
+        }
+
+        nav ul li{
+            margin: 0 20px;
+            padding: 0 2px;
+            list-style: none;
+            text-decoration: none;
+            font-size: large;
+        }
+        nav ul li a:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+      .main{
+        width: 100%;
+        height:100vh;
+        /* background-image: url('https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80'); */
+        /* background-size: cover; */
+      }
+      .main_top{
+        margin: 10px 15px;
+          height: 45%;
+          display: flex;
+         
+
+      }
+      .main_left{
+        width: 55%;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+      }
+     
+      .main_left_content {
+        text-align: center;
+    }
+      .main_left_content h2{
+        margin-top: 15px;
+    }
+      .main_left_content p{
+        text-align: left;
+    }
+
+    .Getting_started{
+      margin-top: auto;
+      width: 80%;
+      margin-bottom: 1rem;
+      
+    }
+    .Getting_started button{
+      width: 100%;
+      height: 150%;
+     border-radius: 10px;
+     background:linear-gradient(90deg, rgba(86, 0, 212, 1) 10%, rgba(238, 130, 238, 1) 100%);
+     color: azure;
+     font-size: large;
+     cursor: pointer;
+    }
+
+
+      .main_right{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+        width: 45%;
+      }
+      .img_right {
+        width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 12px;
+      }
+      .img_right img{
+        height: 100%;
+         width: 120%;
+         border-radius: 13px;
+      }
+   .main_bottom{
+    margin-top: 10px;
+
+    height: 40%;
+   }
+     .container{
+        margin: 5px;
+        margin-top: 1.1rem;
+        display: flex;
+        justify-content: center;
+/* border: 2px solid red; */
+     }  
+    .images_content{
+        width: 20%;
+        height: 30%;
+        /* border: 2px solid green; */
+        margin: 0 15px;
+    }
+    .images_content img{
+    width: 100%;
+    }
+    .images_content p{
+  font-size: larger;
+    }
+
+    .main_bottom h2{
+        text-align: center;
+        text-decoration: underline;
+        margin-bottom: 10px;
+        cursor: pointer;
+        
+    }
+    .container p{
+        font-size: x-large;
+    }
+
+    .container p:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .left_ham,.ham_nav{
+        display: none;
+    }
+    @media screen and (max-width: 1080px) {
+
+       
+        .left_ham img{
+            width: 40px;
+        }
+        .left {
+            display: flex;
+            height: 40px;
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        .left_ham{
+            display: block;
+            position: absolute;
+            left: 0px;
+        }
+       
+        .right,.navbar{
+             display: none;
+        }
+        .main_top,.main_bottom{
+            flex-direction: column;
+            height: unset;
+        }
+        .main_left,.main_right{
+            width: 100%;
+        }
+        .Getting_started{
+            margin-top: 1rem;
+        }
+       .container{
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+       }
+      .images_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 15px;
+        /* border: 2px solid green; */
+      }
+      .images_content img{
+        width: 80%;
+    }
+    .ham_nav ul{
+        display: flex;
+        flex-direction: column;
+        margin-top: 13px;
+    }
+   .ham_nav ul li{
+    margin: 5px 5px ;
+   }
+    .left_ham:hover .ham_nav{
+        display: block;
+        /* top: 0; */
+        background:linear-gradient(90deg, rgba(0, 188, 212, 1) 50%, rgba(238, 130, 238, 1) 100%);
+        }
+}
+    </style>
+</head>
+<body>
+    <header>
+       
+        <div class="left">
+        <div class="left_ham">
+            <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/hamburger-menu-1667904-2039427.png?f=avif&w=128" alt="">
+            <div class="ham_nav">
+                <nav>
+                    <ul>
+                        <li><a>Home</a></li>
+                        <li><a>Courses</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+           <strong>
+               Intern Crowd
+           </strong> 
+        </div>
+        <div class="navbar">
+
+            <nav>
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>Courses</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <!-- <form class="example" action="action_page.php"> -->
+                <button type="submit"><i class="fa fa-search" style="border: none;"></i></button>
+                <input type="text" placeholder="Search.." name="search" style="border: none;">
+              <!-- </form> -->
+        </div>
+    </header>
+
+
+
+<div class="main">
+    <div class="main_top">
+
+        <div class="main_left">
+            <div class="main_left_content">
+
+                <h2>Web Development</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi numquam dolore consequuntur, ducimus nobis consequatur accusantium dicta iusto at, non blanditiis quod. Dolorem, adipisci doloribus soluta fuga harum dicta molestiae, cum ipsa quod atque corrupti consectetur nulla, quos aperiam laborum consequuntur? Odio alias, ab aliquam eum repellendus, sunt quos sequi eos architecto tempore magni esse aut at maxime, delectus facilis.</p>
+                <br><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ea facilis sapiente dolores quisquam distinctio reiciendis dicta, aspernatur ad a ratione, veniam tempore ab eveniet hic totam excepturi autem voluptatum!</p>
+            </div>
+        
+        <div class="Getting_started">
+            <button>Getting Started</button>
+        </div>
+        </div>
+
+
+        <div class="main_right">
+            <div class="img_right">
+
+                <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <br>
+<div class="main_bottom">
+    <h2>Check the below links to explore about the latest technological advancements </h2>
+    
+    <div class="container">
+        <div class="images_content">
+            <!-- <img src="https://media.istockphoto.com/id/1372764637/photo/coding-language-development-icon-on-yellow-background-software-development-concept.jpg?s=612x612&w=is&k=20&c=tecAeqATCVoCtVmF9ZeSPG4xEljo-MBjTscPhB1rxSM=" alt=""> -->
+            <img src="https://images.unsplash.com/photo-1548092372-0d1bd40894a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGludGVybmV0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            <!-- <img src="https://media.istockphoto.com/id/1415186993/photo/ai-circuit-board.jpg?b=1&s=170667a&w=0&k=20&c=lXDB2HsX7P1z_LgrNVkDtJupt0vam6_eak64x2WY4Ls=" alt=""> -->
+           <p>What is Blockchain</p>
+        </div>
+        <div class="images_content">
+           <!-- <img src="https://media.istockphoto.com/id/1372764637/photo/coding-language-development-icon-on-yellow-background-software-development-concept.jpg?s=612x612&w=is&k=20&c=tecAeqATCVoCtVmF9ZeSPG4xEljo-MBjTscPhB1rxSM=" alt=""> -->
+           <img src="https://media.istockphoto.com/id/1334906074/photo/web-designer-working-with-multiple-devices.jpg?s=612x612&w=is&k=20&c=4Z0CoNwkdZi08lhyZt8FvxrvqGhPk3zMEK5ePHgwSzE=" alt="">
+           <p>How Computers work</p>
+        </div>
+        <div class="images_content">
+           <!-- <img src="https://media.istockphoto.com/id/1372764637/photo/coding-language-development-icon-on-yellow-background-software-development-concept.jpg?s=612x612&w=is&k=20&c=tecAeqATCVoCtVmF9ZeSPG4xEljo-MBjTscPhB1rxSM=" alt=""> -->
+           <img src="https://images.unsplash.com/photo-1600463241302-88b0e1a51175?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHdlYnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+           <p>What is Web3 </p>
+        </div>
+        <div class="images_content">
+           <!-- <img src="https://media.istockphoto.com/id/1372764637/photo/coding-language-development-icon-on-yellow-background-software-development-concept.jpg?s=612x612&w=is&k=20&c=tecAeqATCVoCtVmF9ZeSPG4xEljo-MBjTscPhB1rxSM=" alt=""> -->
+           <img src="https://media.istockphoto.com/id/1461072684/photo/5g-connection-technology.jpg?b=1&s=170667a&w=0&k=20&c=NdRNnRfIaGvpfM4H5pyoNX4_e7rK_r6cWuSy2o5-xRA=" alt="">
+           <p>How 5G works</p>
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+</body>
+</html>
